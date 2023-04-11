@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimulatorZoo
 {
-    class Maimuta : Animal
+    public class Maimuta : Animal
     {
         public string Rasa;
-        public Maimuta(string Name, int Age, int Life , string Rasa) 
-            : base(Name, Age, Life) //apeleaza constructorul din clasa de baza.
+        public Maimuta(string Name, int Age , string Rasa) 
+            : base(Name, Age) //apeleaza constructorul din clasa de baza.
         {
             this.Rasa= Rasa;
+            this.VarstaMaxima = 10;
         }
     }
 }

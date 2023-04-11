@@ -4,14 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Maimuta maimuta = new Maimuta("Raluca" , 22 , 100 , "Capucino");
-            maimuta.PrimesteDamage(20);
-            maimuta.UrmatoareaZi();
-
-            maimuta.PrimesteDamage(30);
-            maimuta.UrmatoareaZi();
-
-            Console.ReadKey();
+            
+            Maimuta maimuta = new Maimuta("Ali" , 24 , "Capucino");
+            Zoo zoo = new Zoo(maimuta);
+            zoo.Run();
             
 
 

@@ -1,0 +1,23 @@
+Utilizatorul sa controleze din consola urmatoarea zi , cat damage a luat fiecare animal.
+Structura :
+Buna ziua , bine ati venit la gradina zoo , noi avem doar maimute , lei , tigri .
+Doriti ca animalele sa primesca damage ? Da apasa 1 , Nu apasa 2 
+Daca apasa 1 => Introduceti Animalul care vreti sa primeasca damage . 1-maimute , 2-lei , 3- tigri.
+Ati selectat sa primeasca damage maimutele . Ce damage doriti sa primeasca animalul . 20 ... 100-20.
+
+Schimbam :
+Zoo pacifista!
+Structura :
+Buna ziua , bine ati venit la gradina zoo , noi avem doar maimute , lei , tigri .
+Doriti sa hraniti animalele ? Da apasa 1 , Nu apasa 2.=> daca nimeni nu hraneste animalele - viata. 
+*Daca s-a termina iteractiunea cu animalele ziua avanseaza automat 
+*Animalele mor in urmatoarele conditii :
+1.Ajung la varsta lui maxima(setata de mine in clasa),toti lei sau toate maimute sau toti tigri au varste specifice (diferite)
+fara sa se seteze din exterior , setate de mine.
+2.Depasesc greutatea lor maxima , mai mult de 2 zile la rand(de gras)
+        -Cand ai hranit animalul ii greste  greutatea.
+3.Daca greutatea lor este sub limita minima mai mult de 2 zile.(de foame)
+---------------------------------------------------------11.04.2023--------------------------------------------
+   
+ 
+

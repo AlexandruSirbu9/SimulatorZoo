@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace SimulatorZoo
 {
-    class Leu : Animal
+    public class Leu : Animal
     {
         public string sexul;
-        public Leu(string Name, int Age, int Life , string Sexul) 
-            : base(Name, Age, Life)
+        public Leu(string Name, int Age , string Sexul) 
+            : base(Name, Age)
         {
             this.sexul= Sexul;
+            this.VarstaMaxima = 15;
         }
 
       
