@@ -10,17 +10,28 @@ namespace SimulatorZoo
     public  class Zoo
     {
         private Maimuta maimuta1 { get; set; }
-        public  Zoo(Maimuta maimuta) 
+        private Leu leu1 { get; set; }
+        private Tigri tigru1 { get; set; }
+        public  Zoo(Maimuta maimuta , Leu leu , Tigri tigru)
         {
+         
             this.maimuta1 = maimuta;
+            this.leu1 = leu;
+            this.tigru1 = tigru;
             
 
         }
 
+        
+        
+
         public void Run()
         {
             Console.WriteLine("Buna ziua , bine ati venit la gradina noastra ZOO!");
-            Console.WriteLine("In gradina avem o maimuta pe nume {0}", maimuta1.Name);
+            Console.WriteLine("\n");
+            Console.WriteLine("In gradina avem o maimuta pe nume {0} , un leu pe nume {1} , un tigru pe nume ", maimuta1.Name , leu1.Name , tigru1.Name);
+            Console.WriteLine("\n");
+            
 
             int zile = 1;
             //while true este folosit pentru a mima rularea continua a programului 
@@ -30,8 +41,10 @@ namespace SimulatorZoo
                 string input;
                 Console.WriteLine("Este ziua : {0}", zile);
                 AfisareStatus();
-                Console.WriteLine("Ce animal ati dori sa hraniti?");
+                Console.WriteLine("Ce animal ati dori sa hraniti? \n");
                 Console.WriteLine("Pentru maimuta introduceti 1.");
+                Console.WriteLine("Pentru leu introduceti 2.");
+                Console.WriteLine("Pentru tigru introduceti 3 \n");
                 input= Console.ReadLine();
                 int optiune;
                 if(input != null && int.TryParse(input , out optiune)) 
@@ -44,6 +57,16 @@ namespace SimulatorZoo
                                 Console.WriteLine("Maimuta s-a hranit.");
                                 break;
                             }
+                        case 2 :
+                            {
+                                Console.WriteLine("Leul a fost hranit.");
+                                break;
+                            }
+                        case 3:
+                            {
+                                Console.WriteLine("Tigru a fost hranit.");
+                                break;
+                            } 
                         default:
                             {
                                 Console.WriteLine("Nu este o optiune valida!");
@@ -52,6 +75,12 @@ namespace SimulatorZoo
 
                             
                     }
+                    leu1.UrmatoareaZi();
+                    leu1.MoarteLeu();
+                    maimuta1.UrmatoareaZi();
+                    maimuta1.MoarteMaimuta();
+                    tigru1.UrmatoareaZi();
+                    tigru1.MoarteTigri();
 
                 }
                 else
@@ -68,7 +97,9 @@ namespace SimulatorZoo
 
         public void AfisareStatus()
         {
-            Console.WriteLine("Maimuta de rasa {0},pe nume {2}, are varsta de {1} zile." ,maimuta1.Rasa , maimuta1.Name , maimuta1.Age);
+            Console.WriteLine("Maimuta de rasa {0},pe nume {1}, are varsta de {2} zile." ,maimuta1.Rasa , maimuta1.Name , maimuta1.Age);
+            Console.WriteLine("Leul de sex {0} , pe nume {1} , are varsta de {2} zile." , leu1.Sexul , leu1.Name , leu1.Age);
+            Console.WriteLine("Tigru de culoare {0} , pe nume {1} , are varsta de {2} zile." , tigru1.Culoarea , tigru1.Name , tigru1.Age);
 
         }
         

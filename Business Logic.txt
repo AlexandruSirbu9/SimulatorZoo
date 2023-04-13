@@ -13,7 +13,7 @@ Doriti sa hraniti animalele ? Da apasa 1 , Nu apasa 2.=> daca nimeni nu hraneste
 *Daca s-a termina iteractiunea cu animalele ziua avanseaza automat 
 *Animalele mor in urmatoarele conditii :
 1.Ajung la varsta lui maxima(setata de mine in clasa),toti lei sau toate maimute sau toti tigri au varste specifice (diferite)
-fara sa se seteze din exterior , setate de mine.
+fara sa se seteze din exterior , setate de mine.*
 2.Depasesc greutatea lor maxima , mai mult de 2 zile la rand(de gras)
         -Cand ai hranit animalul ii greste  greutatea.
 3.Daca greutatea lor este sub limita minima mai mult de 2 zile.(de foame)

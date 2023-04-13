@@ -11,6 +11,8 @@ namespace SimulatorZoo
         public string Name { get; set; }    
         public int Age { get; set; }
         public int VarstaMaxima { get; set; }
+
+        
         
         
 
@@ -27,8 +29,9 @@ namespace SimulatorZoo
         {
             Age++;
             
-
         }
+
+      
 
        
        

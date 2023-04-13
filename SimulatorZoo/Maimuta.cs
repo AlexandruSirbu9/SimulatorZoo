@@ -14,6 +14,15 @@ namespace SimulatorZoo
         {
             this.Rasa= Rasa;
             this.VarstaMaxima = 10;
+            this.Age = 2;
+        }
+
+        public void MoarteMaimuta()
+        {
+            if(Age >= VarstaMaxima)
+            {
+                Console.WriteLine("Maimuta a decedat.");
+            }
         }
     }
 }
